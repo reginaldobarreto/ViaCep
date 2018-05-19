@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5cae9"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activities.MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/titulo"
+        android:textSize="24sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="8">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/editTextCep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_digite_cep"
+            android:inputType="number"
+            android:maxLength="8" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonCep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:text="@string/btnconsultar" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvLogradouro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logradouro"
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="287dp" />
+
+                <TextView
+                    android:id="@+id/textViewLogradouro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18sp"
+                    tools:text="Logradouro" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearComplemento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvComplemento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Complemento: "
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="314dp" />
+
+                <TextView
+                    android:id="@+id/textViewComplemento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18sp"
+                    tools:text="Complemento" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvBairro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bairro: "
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="341dp" />
+
+                <TextView
+                    android:id="@+id/textViewBairro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18sp"
+                    tools:text="Bairro" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvLocalidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Localidade: "
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="368dp" />
+
+                <TextView
+                    android:id="@+id/textViewLocalidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18sp"
+                    tools:text="Localidade" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvUf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UF: "
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="395dp" />
+
+                <TextView
+                    android:id="@+id/textViewUf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18sp"
+                    tools:text="UF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvUnidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unidade: "
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="422dp" />
+
+                <TextView
+                    android:id="@+id/textViewUnidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18sp"
+                    tools:text="Unidade" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvIbge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IBGE: "
+                    android:textSize="18sp"
+                    android:visibility="invisible"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="449dp" />
+
+                <TextView
+                    android:id="@+id/textViewIbge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18sp"
+                    tools:text="IBGE" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

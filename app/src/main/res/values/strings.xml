@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ViaCep</string>
+    <string name="btnconsultar">CONSULTAR</string>
+    <string name="logradouro">Logradouro:</string>
+    <string name="input_digite_cep">Entre com o CEP</string>
+    <string name="titulo">Consulte CEP</string>
+</resources>
